@@ -1,0 +1,142 @@
+html,body {
+  height:100%;
+/*background-color: #61bf2a;*/
+/*background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");*/
+  /*background-color: rgba(88,88,88,0.2);*/
+  font-family:'Verdana';
+  /*background-color: #5794f0;*/
+/*background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+/*background-image: url("https://img.freepik.com/free-vector/abstract-background-with-watercolor-texture_1048-2144.jpg?size=338&ext=jpg");*/
+/*background-size: cover;*/
+}
+a:visited{
+	color: white;
+}
+
+.navbar-custom {
+	z-index: 9998;
+	transition: all 0.5s;
+	background-color: rgba(112,112,112,.2);
+	@media screen and (min-width: 767px) {
+		padding-top: $spacer * 0.5; 
+		padding-bottom: $spacer * 0.5;
+	}
+	
+	#navbar-brand{
+		text-decoration: none;
+		text-transform: uppercase;
+		margin-right: 20px;
+	    /*foat: left;*/
+	    font-weight: 200;
+	    font-size: 150%;
+	    color: rgba(225,255,225,.9);
+	    /*font-family:'Verdana','Console',Lucida', Courier New', Monospace;*/
+	    letter-spacing: 0.1em;
+	  	outline: 2px solid white;
+	  	outline-offset: 5px;
+	}
+
+	.nav-item{
+		/*font-size: 1.3rem;*/
+		margin-right: 25px;
+		color: rgba(225,225,255,.5);
+	    /*font-family: 'Verdana','Console',Lucida', Courier New', Monospace;*/
+	  	/*font-size: 100%;*/
+	}
+
+	#navbar-brand:hover {
+		color: #fff;
+	}
+
+
+	.navbar-nav .nav-link {
+	    color: rgba(255,255,225,.6);
+	    font-family: 'Verdana','Console',Lucida', Courier New', Monospace;
+	  	font-size: 100%;
+	}
+
+	.navbar-nav .nav-item:active .nav-link,
+	.nav-item:hover .nav-link,
+	{
+	    color: #fff;
+	}
+	.navbar-nav .nav-item .nav-link a:visited
+	{
+	    color: #fff;
+	}
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,225,222, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler { 
+    border-color: rgba(225,255,225,.6);
+} 
+
+/*section {
+  height:calc(90% - 50px);
+  height: 90vh;
+  position: relative;
+}*/
+
+#home{
+	background-color: #33cccc;
+}
+.first {
+	height:110%;
+	/*min-height:400px;*/
+    background-size:cover;
+    background-image: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,0.7), transparent),url('../../../img/Shashank_small.jpg');
+    @media screen and (min-width: 767px) {
+		background-image: linear-gradient(rgba(20,20,20,0.5), rgba(20,20,20,0.7), transparent),url('../../../img/Shashank.jpg');
+		height:130%;
+    }
+	
+	.centered-text {
+		top: 60%;
+		left: 50%;
+		color: #fff;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	    @media screen and (min-width: 767px) {
+	        white-space: nowrap;
+			overflow: hidden;
+			top: 65%;
+			left: 50%;
+	    }
+		h1{
+			font-family: 'Verdana';
+			font-size: 2.5rem;
+			text-align: center;
+			color: rgba(225,225,225,0.8);
+		}
+		em{
+			font-size: 3.5rem;
+			font-weight: 500;
+			letter-spacing: 0.1rem;
+		}
+
+		p{
+			font-family: 'Verdana';
+			font-size: 1.0rem;
+			text-align: center;
+			color: rgba(225,225,225,0.8);	
+		}
+	}
+	.btn-position .btn{
+		background-color: rgba(107,104,112,0.8);
+		border-radius: 40px;
+		width: auto;
+		height: auto;
+		/*max-width: 100%;*/
+		padding: 0.7rem; 
+		color: rgba(225,255,225,.9);
+		position: absolute;
+		top: 90%;
+		left: 42%;
+		letter-spacing: 0.1rem;
+	}
+}
